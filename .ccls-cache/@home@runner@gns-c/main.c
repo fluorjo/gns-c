@@ -14,7 +14,23 @@ int main(void) {
   int a=30;
   int b=a*2;
   printf("%d\n", a/b);
-  printf("%f", (double)a/(double)b);
+  printf("%f\n", (double)a/(double)b);
+
+
+  //3강
+  printf("선 연산 후 증가 : %d\n", a++);
+  printf("다시 a 출력해야 증가됨 : %d\n", a);
+  
+  printf("선 증가 후 연산 : %d\n", ++a);
+  printf("다시 a 출력하면 위와 동일. : %d\n", a);
+
+  int c=10;
+  printf("%d\n", c);
+  int d=(c--)+2;
+  printf("%d\n", d);
+  printf("%d\n", c);
+  
+  //
   
   return 0;
 }//중괄호 닫아서 프로그램의 끝을 알림.
