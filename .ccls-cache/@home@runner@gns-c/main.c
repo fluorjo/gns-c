@@ -30,7 +30,28 @@ int main(void) {
   printf("%d\n", d);
   printf("%d\n", c);
   
-  //
+  //4강
+  int e=3,f=3;
+  printf("4강 논리연산자: %d\n", !(++e!=f));
+
+  //5강
+  if(e==4)
+  {
+    printf("e는 %d\n",e);
+  }
+  else if(e==5)
+  {
+    printf("e는 5");
+  }
+  else
+  {
+    printf("그 외 조건");
+  }
+  int e2;
+  e2=(e==4)? 99:22;
+  printf("%d\n",e2);
+  printf("e랑 e2 중 큰 값은 %d\n",(e>e2)?e:e2);
+  
   
   return 0;
 }//중괄호 닫아서 프로그램의 끝을 알림.
