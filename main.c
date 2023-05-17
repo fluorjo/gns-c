@@ -30,7 +30,9 @@ int main(void) {
   printf("%d\n", d);
   printf("%d\n", c);
   
-  //
+  //4강
+  int e=3,f=2;
+  printf("4강 논리연산자: %d\n", !(++e!=f));
   
   return 0;
 }//중괄호 닫아서 프로그램의 끝을 알림.
