@@ -51,7 +51,19 @@ int main(void) {
   e2=(e==4)? 99:22;
   printf("%d\n",e2);
   printf("e랑 e2 중 큰 값은 %d\n",(e>e2)?e:e2);
-  
-  
+
+  //6강
+  int switchvar=11;
+  switch(switchvar)
+  {
+    case 10:
+      printf("스위치값은 10\n");
+    case 11:
+      printf("스위치값은 11\n");
+    break;
+    default:
+      printf("스위치값은 10도 11도 아닌 무언가\n");
+  }
+
   return 0;
 }//중괄호 닫아서 프로그램의 끝을 알림.
