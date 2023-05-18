@@ -72,6 +72,22 @@ int main(void) {
     whilevar++;
   }
   printf("1부터 10까지의 합 = %d\n",sum1);
-  
+
+  //8강
+  int a8=0,b8=0,c8=0;
+  while(c8<5)
+    {
+     while(b8<4)
+     {
+      b8++;
+      printf("현재 c8 값은 %d\n",c8);
+      printf("현재 b8 값은 %d\n",b8);
+     }
+      a8+=b8;
+      c8++;
+      printf("현재 c8 값은 %d\n",c8);
+      printf("현재 a8 값은 %d\n",a8);
+    }
+  printf("a8 값은 %d\n",a8);
   return 0;
 }//중괄호 닫아서 프로그램의 끝을 알림.
