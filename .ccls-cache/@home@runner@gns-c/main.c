@@ -51,7 +51,70 @@ int main(void) {
   e2=(e==4)? 99:22;
   printf("%d\n",e2);
   printf("e랑 e2 중 큰 값은 %d\n",(e>e2)?e:e2);
-  
+
+  //6강
+  int switchvar=11;
+  switch(switchvar)
+  {
+    case 10:
+      printf("스위치값은 10\n");
+    case 11:
+      printf("스위치값은 11\n");
+    break;
+    default:
+      printf("스위치값은 10도 11도 아닌 무언가\n");
+  }
+
+  //7강
+  int whilevar=1, sum1=0;
+  while(whilevar<=10){
+    sum1+=whilevar;
+    whilevar++;
+  }
+  printf("1부터 10까지의 합 = %d\n",sum1);
+
+  //8강
+  int a8=0,b8=0,c8=0;
+  while(c8<5)
+    {
+     while(b8<4)
+     {
+      b8++;
+      printf("현재 c8 값은 %d\n",c8);
+      printf("현재 b8 값은 %d\n",b8);
+     }
+      a8+=b8;
+      c8++;
+      printf("현재 c8 값은 %d\n",c8);
+      printf("현재 a8 값은 %d\n",a8);
+    }
+  printf("a8 값은 %d\n",a8);
+
+  //9강 - do - while문
+  int a9=0,b9=1;
+  do{
+    a9+=b9;
+    b9=b9+1;
+  }while(b9<=3);
+  printf("a9의 값은 %d\n",a9);
+
+  //10강 for문
+  int a10;
+  for(a10=0 ; a10<2 ; a10++)
+  {
+    printf("a10의 값은 %d\n",a10);
+  }
+
+  //11강 다중 for문
+  int a11, b11;
+  for(a11=0; a11<3; a11++)
+  {
+    printf("현재 a11은 %d \n",a11);
+    for(b11=0; b11<2; b11++)
+      {
+        printf("현재 b11은 %d \n",b11);
+      }
+  }
   
   return 0;
 }//중괄호 닫아서 프로그램의 끝을 알림.

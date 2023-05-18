@@ -89,5 +89,32 @@ int main(void) {
       printf("현재 a8 값은 %d\n",a8);
     }
   printf("a8 값은 %d\n",a8);
+
+  //9강 - do - while문
+  int a9=0,b9=1;
+  do{
+    a9+=b9;
+    b9=b9+1;
+  }while(b9<=3);
+  printf("a9의 값은 %d\n",a9);
+
+  //10강 for문
+  int a10;
+  for(a10=0 ; a10<2 ; a10++)
+  {
+    printf("a10의 값은 %d\n",a10);
+  }
+
+  //11강 다중 for문
+  int a11, b11;
+  for(a11=0; a11<3; a11++)
+  {
+    printf("----현재 a11은 %d \n",a11);
+    for(b11=0; b11<2; b11++)
+      {
+        printf("현재 b11은 %d \n",b11);
+      }
+  }
+  
   return 0;
 }//중괄호 닫아서 프로그램의 끝을 알림.
