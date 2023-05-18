@@ -65,5 +65,13 @@ int main(void) {
       printf("스위치값은 10도 11도 아닌 무언가\n");
   }
 
+  //7강
+  int whilevar=1, sum1=0;
+  while(whilevar<=10){
+    sum1+=whilevar;
+    whilevar++;
+  }
+  printf("1부터 10까지의 합 = %d\n",sum1);
+  
   return 0;
 }//중괄호 닫아서 프로그램의 끝을 알림.
