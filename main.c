@@ -135,5 +135,39 @@ int main(void) {
     }
   printf("1부터 10까지의 짝수합=%d\n",s122);
   
+  //13강 배열
+  int array [5];
+  array[0]=0;
+  array[1]=99;
+  printf("%d\n",array[1]);
+
+  char str[]={"asdfg"}; //배열 크기 지정 안함-끝에 null 문자 들어감.
+  printf("문자배열의 크기는 %d\n",sizeof(str));
+  char str2[8]={"asdfg"}; //배열 크기 지정하면 지정한 값으로 됨. 
+  printf("문자배열의 크기는 %d\n",sizeof(str2));
+  char str3[5]={"a","s","d","f","g"}; //문자열 크기 지정 후 한 글자씩 넣으면 그 크기로 됨. 
+  printf("문자배열의 크기는 %d\n",sizeof(str3));
+
+  int sl;
+  char ch13;
+  char str13[6]="abcde\n";
+  printf("변경 전 문자열 \n");
+  printf("%s \n", str13);
+
+  for(sl=0; sl<6; sl++)
+    printf("%c | \n",str13[sl]);
+
+  for(sl=0; sl<3; sl++)
+    {
+      ch13=str13[4-sl];
+      str13[4-sl]=str13[sl];
+      str13[sl]=ch13;
+    }
+
+  printf("변경 후 문자열 \n");
+  printf("%s \n", str13);
+
+  
+  
   return 0;
 }//중괄호 닫아서 프로그램의 끝을 알림.
