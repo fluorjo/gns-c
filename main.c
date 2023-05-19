@@ -115,6 +115,25 @@ int main(void) {
         printf("현재 b11은 %d \n",b11);
       }
   }
+  //12강 break, continue
+
+  int a12=0;
+  while(1)
+    {
+      a12++;
+      printf("a12는 %d\n",a12);
+      if(a12>3)
+        break;
+    }
+
+  int a122, s122=0;
+  for (a122=1; a122<=10; a122++)
+    {
+      if(a122%2 != 0)
+        continue;
+      s122+=a122;
+    }
+  printf("1부터 10까지의 짝수합=%d\n",s122);
   
   return 0;
 }//중괄호 닫아서 프로그램의 끝을 알림.
