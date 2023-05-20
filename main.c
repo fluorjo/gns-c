@@ -3,6 +3,8 @@
 //stdio.h를 이 코드 파일에 포함시키겠다는 뜻.
 //소스 코드를 기계어로 번역하기 전에, stdio.h라는 헤더를 포함해 컴파일 하겠다. 그래서 stdio.h가 내포함 함수들을 쓰겠다. 
 
+//15강 - 사용자 함수 - 1. 일단 사용자 함수 선언부터 먼저 해준다.
+int Add(int a, int b);
 
 int main(void) {
   printf("Hello World\n");//명령줄 ;로 끝 표시.
@@ -180,5 +182,19 @@ int main(void) {
         }
       printf("\n");
     }
+  
+//15강 - 사용자 함수 - 2.함수 사용
+
+  int a15;
+  a15=Add(4,5);
+  printf("%d \n",a15);
   return 0;
 }//중괄호 닫아서 프로그램의 끝을 알림.
+
+//15강 - 사용자 함수 - 3. 함수 정의. 위에서 선언해 줬으면 이렇게 메인 함수 다음에 작성 가능.
+//단 메인 함수를 닫은 다음에 해줘야 하는 거 주의.
+int Add(int a, int b) 
+{
+  int result = a+b;
+  return result;
+}
