@@ -197,6 +197,24 @@ int main(void) {
   int resultff=fff(22,22);
   printf("다른 파일에서 함수 불러옴 %d \n",resultff);
 
+  int aaa=5, bbb=7, ccc,ddd,eee,fff;
+  ccc=aaa&bbb;
+  ddd=aaa|bbb;
+  eee=aaa^bbb;
+  fff=~bbb;
+  aaa=aaa>>1;
+  bbb=bbb<<3;
+  printf("%d,%d,%d,%d,%d,%d\n",aaa,bbb,ccc,ddd,eee,fff);
+
+  //포인터 - 기출문제.
+  int nn1=200;
+  int nn2=300;
+  int *nx1=&nn1;
+  int *nx2=&nn2;
+  *nx1 +=40;
+  *nx2 -=50;
+  printf("%d, %d",nn1,nn2);
+  
   return 0;
   
 }//중괄호 닫아서 프로그램의 끝을 알림.
@@ -208,3 +226,5 @@ int Add(int a, int b)
   int result = a+b;
   return result;
 }
+
+
